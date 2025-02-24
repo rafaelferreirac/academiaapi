@@ -1,13 +1,28 @@
 package io.github.rafaelferreirac.produtosapi.model;
 
-// POJO -> Plain Old Java Project
+import jakarta.persistence.Entity;
+import jakarta.persistence.Column;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+// POJO -> Plain Old Java
+@Entity
+@Table(name = "produto")
 public class Produto {
 
+    @Id
+    @Column(name = "id")
     private String id;
-    private String nome;
-    private String descricao;
-    private double preco;
 
+    @Column(name = "nome")
+    private String nome;
+
+    @Column(name = "descricao")
+    private String descricao;
+
+    @Column(name = "preco")
+    private double preco;
+    
     public String getId() {
         return id;
     }
