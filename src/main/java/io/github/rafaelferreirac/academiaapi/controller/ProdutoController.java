@@ -1,11 +1,11 @@
-package io.github.rafaelferreirac.produtosapi.controller;
+package io.github.rafaelferreirac.academiaapi.controller;
 
-import io.github.rafaelferreirac.produtosapi.model.Produto;
-import io.github.rafaelferreirac.produtosapi.repository.ProdutoRepository;
+import io.github.rafaelferreirac.academiaapi.model.Produto;
+import io.github.rafaelferreirac.academiaapi.repository.ProdutoRepository;
+
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 @RestController
