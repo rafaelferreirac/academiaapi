@@ -1,4 +1,4 @@
-package io.github.rafaelferreirac.academiaapi.model;
+package io.github.rafaelferreirac.produtosapi.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Column;

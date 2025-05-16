@@ -1,13 +1,13 @@
-package io.github.rafaelferreirac.academiaapi;
+package io.github.rafaelferreirac.produtosapi;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AcademiaApi	 {
+public class ProdutosApi	 {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AcademiaApi.class, args);
+		SpringApplication.run(ProdutosApi.class, args);
 	}
 
 }

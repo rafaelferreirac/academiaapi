@@ -1,7 +1,7 @@
-package io.github.rafaelferreirac.academiaapi.controller;
+package io.github.rafaelferreirac.produtosapi.controller;
 
-import io.github.rafaelferreirac.academiaapi.model.Produto;
-import io.github.rafaelferreirac.academiaapi.repository.ProdutoRepository;
+import io.github.rafaelferreirac.produtosapi.model.Produto;
+import io.github.rafaelferreirac.produtosapi.repository.ProdutoRepository;
 
 import org.springframework.web.bind.annotation.*;
 
@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("produtos")
+@RequestMapping("treinos")
 public class ProdutoController {
 
     private ProdutoRepository produtoRepository;
@@ -20,7 +20,7 @@ public class ProdutoController {
 
     @PostMapping
     public Produto salvar(@RequestBody Produto produto){
-        System.out.println("Produto recebido: " + produto);
+        System.out.println("Treino adicionado: " + produto);
 
         var id = UUID.randomUUID().toString();
         produto.setId(id);
